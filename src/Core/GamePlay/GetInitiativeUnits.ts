@@ -7,30 +7,33 @@ export const GetInitiativeUnits = (
 ) => {
   let maxInitiative = 0;
 
-  for (let row = 0; row < allUnits.length; row++) {
-    for (let column = 0; column < allUnits[row].length; column++) {
+  allUnits.forEach((row) => {
+    row.forEach((unit) => {
       if (
-        allUnits[row][column].healthPoint > 0 &&
-        allUnits[row][column].initiative > maxInitiative &&
-        !turnedUnits.turnedUnits.includes(allUnits[row][column])
+        unit.healthPoint > 0 &&
+        unit.initiative > maxInitiative &&
+        !turnedUnits.turnedUnits.includes(unit)
       ) {
-          maxInitiative = allUnits[row][column].initiative;
+        maxInitiative = unit.initiative;
       }
-    }
-  }
+    });
+  });
 
   let maxInitiativeUnits: Unit[] = [];
 
-  for (let row = 0; row < allUnits.length; row++) {
-    for (let column = 0; column < allUnits[row].length; column++) {
-      if (allUnits[row][column].healthPoint > 0 &&
-        allUnits[row][column].initiative === maxInitiative &&
-        !turnedUnits.turnedUnits.includes(allUnits[row][column])
+  allUnits.forEach((row) => {
+    row.forEach((unit) => {
+      if (
+        unit.healthPoint > 0 &&
+        unit.initiative === maxInitiative &&
+        !turnedUnits.turnedUnits.includes(unit)
       ) {
-          maxInitiativeUnits.push(allUnits[row][column]);
+        maxInitiativeUnits.push(unit);
       }
-    }
-  }
+    });
+  });
 
-  return maxInitiativeUnits.length ? maxInitiativeUnits[Math.floor(Math.random() * maxInitiativeUnits.length)] : null
+  return maxInitiativeUnits.length
+    ? maxInitiativeUnits[Math.floor(Math.random() * maxInitiativeUnits.length)]
+    : null;
 };

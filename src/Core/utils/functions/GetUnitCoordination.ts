@@ -5,13 +5,13 @@ export const getUnitCoordination = (
   allUnits: Unit[][],
   turnUnit: Unit
 ): IIndexUnit => {
-  for (let row = 0; row < allUnits.length; row++) {
-    for (let column = 0; column < allUnits[column].length; column++) {
-      if (allUnits[column][row] === turnUnit) {
-        return {row, column};
+  allUnits.forEach((row, rowIndex) => {
+    row.forEach((unit, unitIndex) => {
+      if (unit === turnUnit) {
+        return {row: rowIndex, column: unitIndex};
       }
-    }
-  }
+    })
+  })
   return {row: 0, column: 0};
 };
 
