@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Tactical-Fight/static/css/main.252256e4.css",
+    "main.js": "/Tactical-Fight/static/js/main.7f149f42.js",
+    "static/js/787.3060e0de.chunk.js": "/Tactical-Fight/static/js/787.3060e0de.chunk.js",
+    "static/media/FieldImg.png": "/Tactical-Fight/static/media/FieldImg.a00d6037527a31eb05f3.png",
+    "static/media/Centaur.png": "/Tactical-Fight/static/media/Centaur.bf3c224c2bfc426e2410.png",
+    "static/media/Skeleton.png": "/Tactical-Fight/static/media/Skeleton.d8044a7c09d72658466c.png",
+    "static/media/Archimage.jpg": "/Tactical-Fight/static/media/Archimage.442e651c6231c8d1f9af.jpg",
+    "static/media/Bandit.png.jpeg": "/Tactical-Fight/static/media/Bandit.png.7b3559335b8f1000a450.jpeg",
+    "static/media/Monk.jpg": "/Tactical-Fight/static/media/Monk.5e6669b648da0c26077d.jpg",
+    "static/media/Sirena.jpg": "/Tactical-Fight/static/media/Sirena.0c3233b954233a186095.jpg",
+    "static/media/Bishop.jpg": "/Tactical-Fight/static/media/Bishop.e914239ade0ca9db058d.jpg",
+    "static/media/ElfArcher.webp": "/Tactical-Fight/static/media/ElfArcher.3a8e5cfe0b8d9cd95ccc.webp",
+    "static/media/SkeletonMage.webp": "/Tactical-Fight/static/media/SkeletonMage.73bfbfe394a926e9efee.webp",
+    "index.html": "/Tactical-Fight/index.html",
+    "main.252256e4.css.map": "/Tactical-Fight/static/css/main.252256e4.css.map",
+    "main.7f149f42.js.map": "/Tactical-Fight/static/js/main.7f149f42.js.map",
+    "787.3060e0de.chunk.js.map": "/Tactical-Fight/static/js/787.3060e0de.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.252256e4.css",
+    "static/js/main.7f149f42.js"
+  ]
+}
