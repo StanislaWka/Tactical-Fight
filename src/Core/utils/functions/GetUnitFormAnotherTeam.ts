@@ -5,11 +5,11 @@ export const getUnitFromAnotherTeam = (allUnits: Unit[][], turnUnit: Unit) :Unit
   let unitFromAnotherTeam: Unit[] = [];
   if (checkUnitTeam(allUnits, turnUnit)) {
     for (
-      let row = Math.floor(allUnits.length / 2);
+      let row =allUnits.length / 2;
       row < allUnits.length;
       row++
     ) {
-      for (let column = 0; row < allUnits[row].length; column++) {
+      for (let column = 0; column < allUnits[row].length; column++) {
         unitFromAnotherTeam.push(allUnits[row][column]);
       }
     }

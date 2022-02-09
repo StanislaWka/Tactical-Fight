@@ -6,7 +6,6 @@ import { IIndexUnit } from "../../interfaces/interfaces";
 export const getUnitToMelee = (allUnits: Unit[][], turnUnit: Unit) => {
   const team: boolean = checkUnitTeam(allUnits, turnUnit);
   const coordination: IIndexUnit = getUnitCoordination(allUnits, turnUnit);
-
   for (
     let row = team ? coordination.row + 1 : coordination.row - 1;
     team ? row < allUnits.length : row >= 0;
@@ -36,7 +35,7 @@ const aliveEnemies = (enemyRow: Unit[], primaryColumn: number): Unit[] => {
         let aliveEnemyRow: Unit[] = [];
         if (enemyRow[0].healthPoint > 0) aliveEnemyRow.push(enemyRow[0]);
         if (enemyRow[1].healthPoint > 0) aliveEnemyRow.push(enemyRow[1]);
-        return enemyRow;
+        return aliveEnemyRow;
       }
       if(enemyRow[3].healthPoint>0) return [enemyRow[3]];
       return [];
@@ -45,10 +44,10 @@ const aliveEnemies = (enemyRow: Unit[], primaryColumn: number): Unit[] => {
       if (enemyRow[0].healthPoint > 0 || enemyRow[2].healthPoint > 0) {
         let aliveEnemyRow: Unit[] = [];
         if (enemyRow[0].healthPoint > 0) aliveEnemyRow.push(enemyRow[0]);
+        if (enemyRow[1].healthPoint > 0) aliveEnemyRow.push(enemyRow[1]);
         if (enemyRow[2].healthPoint > 0) aliveEnemyRow.push(enemyRow[2]);
-        return enemyRow;
+        return aliveEnemyRow;
       }
-      if(enemyRow[1].healthPoint>0) return [enemyRow[1]];
       return [];
     }
     case 2: {
@@ -56,7 +55,7 @@ const aliveEnemies = (enemyRow: Unit[], primaryColumn: number): Unit[] => {
         let aliveEnemyRow: Unit[] = [];
         if (enemyRow[1].healthPoint > 0) aliveEnemyRow.push(enemyRow[1]);
         if (enemyRow[2].healthPoint > 0) aliveEnemyRow.push(enemyRow[2]);
-        return enemyRow;
+        return aliveEnemyRow;
       }
       if(enemyRow[0].healthPoint>0) return [enemyRow[0]];
       return [];

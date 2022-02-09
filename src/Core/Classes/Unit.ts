@@ -12,11 +12,11 @@ export abstract class Unit {
     private _choiceBehavior: IChoiceBehavior
   ) {}
 
-  public get name(): string {
+  public get getName(): string {
     return this._name;
   }
 
-  public set name(value: string) {
+  public set setName(value: string) {
     this._name = value;
   }
 
@@ -73,7 +73,7 @@ export abstract class Unit {
   }
 
   getActionableUnits(allUnits: Unit[][], turnUnit: Unit): Unit[] {
-    const actionAbleUnits = this.getActionableUnits(allUnits, turnUnit);
+    const actionAbleUnits = this.behavior.getActionableUnits(allUnits, turnUnit);
     return actionAbleUnits;
   }
 

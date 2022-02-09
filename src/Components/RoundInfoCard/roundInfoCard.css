@@ -1,0 +1,12 @@
+img{
+    width: 75px;
+    height: 100px;
+    border-radius: 1em;
+
+}
+
+.roundInfoCard{
+    cursor: pointer;
+    border-radius: 1em;
+    margin-right: 10px;
+}

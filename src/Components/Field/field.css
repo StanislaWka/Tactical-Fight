@@ -1,0 +1,37 @@
+.mainField{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    min-height: 100vh;
+    max-height: 100vh;
+}
+.fieldRoundInfo{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rounds{
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.btn{
+    padding: 10px;
+    color: white;
+    border: 2px solid white;
+    background-color: transparent;
+    font: 20px Helvetica, sans-serif;
+    border-radius: 1em;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+.btn:hover{
+color: red;
+border-color: red;
+}
