@@ -18,7 +18,6 @@ export interface ICard {
 }
 
 export const Card: React.FunctionComponent<ICard> = ({
-  key,
   unit,
   turnUnit,
   actionableUnits,
@@ -60,7 +59,6 @@ export const Card: React.FunctionComponent<ICard> = ({
     <div
       className={`beforeCard ${turnedUnitsClassName}  ${defendClassName} ${mouseOverUnitClassName}`}
       onClick={handleActionCard}
-      key={key}
     >
       <div
         className={`card ${actionableUnitClass} ${numberTeamClassName} ${turnedUnitsClassName} ${remainingHpClassName} ${paralyzedCardClassName} ${turnUnitClassName}`}

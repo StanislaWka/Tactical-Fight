@@ -5,7 +5,6 @@ import { getUniqueID } from "../Utils/utils";
 import "./team.css";
 
 export interface ITeam {
-  key: number;
   id:number
   turnUnit: Unit;
   unitsTeam: Unit[];
@@ -19,7 +18,6 @@ export interface ITeam {
 }
 
 export const Team: React.FunctionComponent<ITeam> = ({
-  key,
   id,
   turnUnit,
   unitsTeam,
@@ -32,7 +30,7 @@ export const Team: React.FunctionComponent<ITeam> = ({
   mouseOverUnit
 }) => {
   return (
-    <div className="Team" key={key} id={`${id}`}>
+    <div className="Team" id={`${id}`}>
       <div className="cards">
         {unitsTeam.map((unit, index) => (
           <Card

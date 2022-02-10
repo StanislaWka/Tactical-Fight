@@ -9,7 +9,7 @@ export interface IRoundCard{
     key:string
 }
 
-export const RoundInfoCard: React.FunctionComponent<IRoundCard> = ({unit, turnUnit, setMouseOverUnit, key}:IRoundCard) => {
+export const RoundInfoCard: React.FunctionComponent<IRoundCard> = ({unit, turnUnit, setMouseOverUnit}:IRoundCard) => {
 
     const image = getImage(unit.getName);
     const turnUnitClassName = unit === turnUnit ? 'turnUnit' : ''

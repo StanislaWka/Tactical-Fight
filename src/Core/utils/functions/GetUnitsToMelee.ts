@@ -37,7 +37,7 @@ const aliveEnemies = (enemyRow: Unit[], primaryColumn: number): Unit[] => {
         if (enemyRow[1].healthPoint > 0) aliveEnemyRow.push(enemyRow[1]);
         return aliveEnemyRow;
       }
-      if(enemyRow[3].healthPoint>0) return [enemyRow[3]];
+      if(enemyRow[2].healthPoint>0) return [enemyRow[2]];
       return [];
     }
     case 1: {

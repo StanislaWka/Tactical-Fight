@@ -119,7 +119,6 @@ export const Field: React.FunctionComponent<IFieldProps> = ({
         Round: {round.round} step: {step}
       </p>
       <Team
-        key={1}
         id={1}
         turnUnit={turnUnit}
         unitsTeam={firstTeamUnit}
@@ -133,7 +132,6 @@ export const Field: React.FunctionComponent<IFieldProps> = ({
       />
       <div className="emptyZone"></div>
       <Team
-        key={2}
         id={2}
         turnUnit={turnUnit}
         unitsTeam={secondTeamUnit}
