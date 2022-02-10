@@ -10,13 +10,6 @@ export const checkUnitTeam = (allUnits: Unit[][], turnUnit: Unit): boolean => {
     }
     
   }
-  // allUnits.forEach(row => {
-  //   row.forEach(unit => {
-  //     if (unit === turnUnit) {
-  //       unitInFirstTeam = true;
-  //     }
-  //   })
-  // })
   return unitInFirstTeam;
 };
 
